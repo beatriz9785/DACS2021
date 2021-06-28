@@ -7,7 +7,9 @@
     <body>
         <div class="container">
 			<nav th:replace="layout :: menu">(menu)</nav>
-        
+            
+            <a th:href="@{/produto/novo}" class="btn btn-primary">Novo</a>
+
             <table class="table">
                 <thead>
                     <tr>
@@ -22,7 +24,7 @@
                         <td th:text="${umproduto.descricao}"></td>
                         <td th:text="${umproduto.preco}"></td>
                         <td th:text="${umproduto.dataRegistro}"></td>
-                        <td th:text="${umproduto.categoria.nome}"></td>
+                        <!--<td th:text="${umproduto.categoria.nome}"></td>-->
                         
                     </tr>
                     

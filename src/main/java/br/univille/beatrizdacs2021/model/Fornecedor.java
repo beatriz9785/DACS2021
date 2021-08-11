@@ -13,6 +13,8 @@ public class Fornecedor {
     private String nome;
     private String urlAPI;
     private String urlAPIauth;
+    private String usuario;
+    private String senha;
     
     public long getId() {
         return id;
@@ -50,8 +52,7 @@ public class Fornecedor {
     public void setSenha(String senha) {
         this.senha = senha;
     }
-    private String usuario;
-    private String senha;
+
 
     
 }

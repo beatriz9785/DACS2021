@@ -19,6 +19,7 @@ import br.univille.beatrizdacs2021.service.ProdutoService;
 @Controller
 @RequestMapping("/produto")
 public class ProdutoController {
+    
     @Autowired
     private ProdutoService service;
     

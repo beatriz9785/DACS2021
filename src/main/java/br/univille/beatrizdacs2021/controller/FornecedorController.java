@@ -26,5 +26,11 @@ public class FornecedorController {
         return new ModelAndView("fornecedor/index");
 
     }
+    @GetMapping("/novo")
+    public ModelAndView novo(){
+
+
+      return new ModelAndView("fornecedor/novo");
+    }
     
 }

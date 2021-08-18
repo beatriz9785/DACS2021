@@ -15,8 +15,13 @@ public class FornecedorServiceImpl implements FornecedorService {
     private FornecedorRepository repository;
     @Override
     public List<Fornecedor> getAllFornecedores() {
-        // TODO Auto-generated method stub
+        
         return repository.findAll();
+    }
+    @Override
+    public Fornecedor save(Fornecedor fornecedor) {
+
+        return repository.save(fornecedor);
     }
     
 }

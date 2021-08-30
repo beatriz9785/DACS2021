@@ -23,9 +23,9 @@ public class FornecedorController {
     @GetMapping
     public ModelAndView index(){
 
-      //  List<Fornecedor> listaFornecedores = service.getAllFornecedores();
+        List<Fornecedor> listaFornecedores = service.getAllFornecedores();
 
-        return new ModelAndView("fornecedor/index");
+        return new ModelAndView("fornecedor/index", "listafornecedores", listaFornecedores);
 
     }
     @GetMapping("/novo")

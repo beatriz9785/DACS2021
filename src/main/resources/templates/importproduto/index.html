@@ -6,7 +6,18 @@
     
     <body>
         <div class="container">
-			<h1>IMPORTADOR DE PRODUTOS</h1>
+            <nav th:replace="layout :: menu">(menu)</nav>
+			<h3>IMPORTADOR DE PRODUTOS</h3>
+
+            <form th:action="@{/omport-produto/(form)}" th:object="${fornecedor}" method="POST">
+                <select th:field="*{id}">
+                <option th:each="umfornecedor : ${listafornecedor}"
+                        th:text="${umfornecedor.nome}"
+                        th:value="${umfornecedor.id}"></option>
+                
+                </select>
+                <button>Buscar Produtos</button>
+            </form>
             
 
         </div>

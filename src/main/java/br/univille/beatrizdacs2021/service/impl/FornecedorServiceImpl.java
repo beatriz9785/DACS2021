@@ -23,5 +23,10 @@ public class FornecedorServiceImpl implements FornecedorService {
 
         return repository.save(fornecedor);
     }
+    @Override
+    public Fornecedor getFornecedor(long id) {
+
+        return repository.getById(id);
+    }
     
 }

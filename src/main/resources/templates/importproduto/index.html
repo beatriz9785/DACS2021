@@ -9,7 +9,7 @@
             <nav th:replace="layout :: menu">(menu)</nav>
 			<h3>IMPORTADOR DE PRODUTOS</h3>
 
-            <form th:action="@{/omport-produto/(form)}" th:object="${fornecedor}" method="POST">
+            <form th:action="@{/import-produto}" th:object="${fornecedor}" method="POST">
                 <select th:field="*{id}">
                 <option th:each="umfornecedor : ${listafornecedor}"
                         th:text="${umfornecedor.nome}"
